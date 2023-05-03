@@ -43,22 +43,6 @@ export default class UserController {
     }
   };
 
-  //   updateUser = async (req: Request, res: Response, next: NextFunction) => {
-  //     try {
-  //       const result = updateUserSchema.parse(req.params);
-  //       const user = await UserModel.findOne({ where: { id: result.id } });
-  //       if (!user) {
-  //         return res.status(404).json({ message: "User not found." });
-  //       }
-  //       await UserModel.update(result, {
-  //         where: { id: result.id },
-  //       });
-  //       return res.status(200).json({ message: "User updated successfully." });
-  //     } catch (error) {
-  //       next(error);
-  //     }
-  //   };
-
   fetchAllUsers = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const users = await UserModel.findAll();

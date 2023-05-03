@@ -38,7 +38,7 @@ export default class ProjectController {
   fetchProject = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const project = await ProjectModel.findOne({
-        where: { id: req.params.id },
+        where: { user_id: req.params.id },
       });
       if (!project) {
         return res.status(400).json({ message: "Project not found." });

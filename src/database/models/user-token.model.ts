@@ -10,7 +10,6 @@ class UserTokenModel extends Model<UserTokenAttributes> implements UserTokenAttr
   declare id: string;
   declare token_id: string;
   declare user_id: string;
-//   declare worth: number;
   declare amount: number;
 
   public readonly createdAt!: Date;

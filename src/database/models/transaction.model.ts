@@ -13,7 +13,6 @@ class TransactionModel
   declare id: string;
   declare type: string;
   declare amount: number;
-  declare worth: number;
   declare user_id: string;
   declare token_id: string;
 
@@ -42,10 +41,6 @@ TransactionModel.init(
       allowNull: false,
     },
     amount: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    worth: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },

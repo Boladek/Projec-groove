@@ -10,8 +10,8 @@ export const USER_RESPONSE_MESSAGE = {
   };
 
   export const BUY_TYPES = {
-    BUY_FROM_USER: "by from user",
-    BUY_FROM_PROJECT: "by from project",
+    BUY_FROM_USER: "user",
+    BUY_FROM_PROJECT: "project",
   };
   
   export const API_RESPONSE_MESSAGE = {
